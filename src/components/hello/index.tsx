@@ -9,7 +9,7 @@ export interface HelloProps {
 
 const Hello: React.FC<HelloProps> = ({ name }) => (
   <div className={scssClasses.helloScss}>
-    <p className={cssClasses.helloCss}>Hello, {name}</p>
+    <p className={cssClasses.helloCss}>Hello, {name} !!!</p>
   </div>
 );
 
