@@ -1,5 +1,8 @@
 name: Release
 
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
   push:
     branches:
@@ -25,5 +28,5 @@ jobs:
             @semantic-release/git
             @semantic-release/changelog
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ env.GH_TOKEN }}
+          NPM_TOKEN: ${{ env.GH_TOKEN }}
