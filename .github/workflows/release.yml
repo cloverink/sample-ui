@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   release:
@@ -19,7 +19,7 @@ jobs:
         with:
           branches: |
             [
-              'master'
+              'main'
             ]
           extra_plugins: |
             @semantic-release/git
