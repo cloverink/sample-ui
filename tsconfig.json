@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "components/(.*)": ["components/$1"],
+      "components/(.*)": ["src/components/$1"],
     },
     "outDir": "lib/esm",
     "module": "esnext",
@@ -27,7 +27,8 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src/**/*.ts*"
+    "src/**/*.ts*",
+    "src/**/*.{css,scss}"
   ],
   "exclude": [
     "node_modules",

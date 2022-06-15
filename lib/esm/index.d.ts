@@ -1,2 +1,2 @@
-export { default as Hello } from './hello';
-export * from './hello';
+import Hello from './components/hello';
+export { Hello };
