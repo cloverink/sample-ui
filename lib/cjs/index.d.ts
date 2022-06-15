@@ -1,2 +1,3 @@
 import Hello from 'components/hello';
-export { Hello };
+import Foo from 'components/foo';
+export { Hello, Foo };
