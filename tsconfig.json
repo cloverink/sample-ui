@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "components/(.*)": ["src/components/$1"],
+      "components/(.*)": ["components/$1"],
     },
     "outDir": "lib/esm",
     "module": "esnext",
