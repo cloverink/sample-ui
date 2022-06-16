@@ -27,7 +27,6 @@ const config = {
     postCSS({
       plugins: [require('autoprefixer')],
     }),
-    // typescriptPaths(),
   ],
 };
 
