@@ -2,13 +2,13 @@ import React from 'react';
 
 import "./Hello.scss"
 
-export interface HelloProps {
+export type HelloType = {
   name: string
 }
 
-const Hello: React.FC<HelloProps> = ({ name }) => (
+const Hello: React.FC<HelloType> = ({ name }) => (
   <div className="text-3xl font-bold underline hello">
-      Hello, {name}
+    Hello, {name}
   </div>
 );
 

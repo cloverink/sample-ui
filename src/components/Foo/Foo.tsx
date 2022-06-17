@@ -1,19 +1,18 @@
 import React from 'react';
 
-export interface FooProbs {
+export type FooType = {
   name?: string;
+  bar: string;
 }
 
-const Foo: React.FC<FooProbs> = ({ name }) => {
+const Foo: React.FC<FooType> = ({ name, bar }) => {
   const handleOnClick = () => {
     console.log('bar' + new Date().toISOString());
   };
 
-  const btnName = name ? name : 'Foo'
-
   return (
-    <div className="App">
-      <button onClick={handleOnClick}>{btnName} Button</button>
+    <div>
+      <button onClick={handleOnClick}>{name} {bar} Button</button>
     </div>
   );
 };

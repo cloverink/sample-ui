@@ -1,13 +1,13 @@
 {
   "name": "@cloverink/sample-ui",
   "version": "1.16.0",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
   "files": [
+    "dist",
     "package.json",
-    "README.md",
-    "/lib"
+    "README.md"
   ],
   "repository": {
     "type": "git",
@@ -33,14 +33,15 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
     "autoprefixer": "^10.4.7",
     "babel-cli": "^6.26.0",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.14",
     "rollup": "^2.75.6",
     "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.32.1",
     "tailwindcss": "^3.1.3",
     "typescript": "^4.7.3"
   },
