@@ -1,7 +1,12 @@
-import { HelloType } from "./Hello.types";
+import React from 'react';
+
 import "./Hello.scss"
 
-const Hello: React.FC<HelloType> = ({ name }) => (
+export interface HelloProps {
+  name: string
+}
+
+const Hello: React.FC<HelloProps> = ({ name }) => (
   <div className="text-3xl font-bold underline hello">
       Hello, {name}
   </div>

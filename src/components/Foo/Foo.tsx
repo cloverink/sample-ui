@@ -1,6 +1,10 @@
-import { FooType } from "./Foo.types";
+import React from 'react';
 
-const Foo: React.FC<FooType> = ({ name }) => {
+export interface FooProbs {
+  name?: string;
+}
+
+const Foo: React.FC<FooProbs> = ({ name }) => {
   const handleOnClick = () => {
     console.log('bar' + new Date().toISOString());
   };

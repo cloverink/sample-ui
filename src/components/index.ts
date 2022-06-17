@@ -1,4 +1,4 @@
 import '../index.css'
 
-export { default as Hello } from "components/Hello";
-export { default as Foo } from "components/Foo";
+export { Hello } from "components/Hello";
+export { Foo } from "components/Foo";

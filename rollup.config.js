@@ -7,7 +7,7 @@ import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 
 const config = {
-  input: 'src/index.ts',
+  input: 'src/components/index.ts',
   output: [
     {
       file: './lib/cjs/index.js',
