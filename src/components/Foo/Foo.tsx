@@ -1,8 +1,6 @@
-export interface FooProps {
-  name: string;
-}
+import { FooType } from "./Foo.types";
 
-const Foo: React.FC<FooProps> = ({ name }) => {
+const Foo: React.FC<FooType> = ({ name }) => {
   const handleOnClick = () => {
     console.log('bar' + new Date().toISOString());
   };

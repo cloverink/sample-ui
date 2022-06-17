@@ -5,6 +5,8 @@
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
   "files": [
+    "package.json",
+    "README.md",
     "/lib"
   ],
   "repository": {
