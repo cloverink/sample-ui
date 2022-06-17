@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
-import Hello from 'components/hello';
-import Foo from 'components/foo'
+import {Hello, Foo} from 'components';
 
 export { Hello, Foo }
 

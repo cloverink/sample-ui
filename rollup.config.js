@@ -2,6 +2,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import postCSS from 'rollup-plugin-postcss';
+import del from 'rollup-plugin-delete';
 
 import pkg from './package.json';
 
@@ -19,13 +20,25 @@ const config = {
   ],
   external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
+    del({ targets: 'lib/*' }),
     nodeResolve(),
     commonjs(),
     typescript({
-      typescript: require('typescript'),
+      tsconfigOverride: {
+        exclude: [
+          '**/__tests__',
+          '**/__e2e__',
+          '**/*.test.ts',
+          '*.config.*',
+          'src/index.js'
+        ]
+      }
     }),
     postCSS({
-      plugins: [require('autoprefixer')],
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer')
+      ],
     }),
   ],
 };

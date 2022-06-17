@@ -1,3 +1,5 @@
+import '../index.css'
+
 import Hello from 'components/hello';
 import Foo from 'components/foo'
 
