@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "eject": "react-scripts eject",
     "build": "rollup -c"
   },
   "dependencies": {
