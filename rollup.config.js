@@ -6,7 +6,7 @@ import postCSS from 'rollup-plugin-postcss';
 import pkg from './package.json';
 
 const config = {
-  input: 'src/index.ts',
+  input: 'src/components/index.ts',
   output: [
     {
       file: './lib/cjs/index.js',

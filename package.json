@@ -12,6 +12,7 @@
     "url": "https://github.com/cloverink/sample-ui.git"
   },
   "scripts": {
+    "start": "react-scripts start",
     "build": "rollup -c"
   },
   "dependencies": {
