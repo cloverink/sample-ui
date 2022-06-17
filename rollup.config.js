@@ -7,7 +7,7 @@ import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 
 const config = {
-  input: 'src/components/index.ts',
+  input: 'src/components/lib.ts',
   output: [
     {
       file: './lib/cjs/index.js',
@@ -29,8 +29,7 @@ const config = {
           '**/__tests__',
           '**/__e2e__',
           '**/*.test.ts',
-          '*.config.*',
-          'src/index.js'
+          '*.config.*'
         ]
       }
     }),
